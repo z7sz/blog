@@ -324,13 +324,6 @@
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/tags/dvwa/</loc>
-    <lastmod>2022-06-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.z7sz.top/tags/sql%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -338,7 +331,7 @@
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/tags/%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83/</loc>
+    <loc>https://blog.z7sz.top/tags/dvwa/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -352,7 +345,7 @@
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/tags/python%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://blog.z7sz.top/tags/%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -372,17 +365,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.z7sz.top/tags/python%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2022-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://blog.z7sz.top/categories/web/</loc>
+    <loc>https://blog.z7sz.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/categories/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>https://blog.z7sz.top/categories/web/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -396,14 +396,14 @@
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/categories/python/</loc>
+    <loc>https://blog.z7sz.top/categories/hexo/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blog.z7sz.top/categories/hexo/</loc>
+    <loc>https://blog.z7sz.top/categories/python/</loc>
     <lastmod>2022-06-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
