@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="mask-icon" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png" color="#222">
+  <meta name="google-site-verification" content="MUHPhzKt0ZT1_C9CHx84pXcbz-NqFP6V06JNY5Sp9e4">
+  <meta name="baidu-site-verification" content="code-7QquLpFUZI">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.z7sz.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":20},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本章概述：python基础——函数的基本使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数的基本使用">
+<meta property="og:url" content="https://blog.z7sz.top/post/f38cf25.html">
+<meta property="og:site_name" content="77づづ77">
+<meta property="og:description" content="本章概述：python基础——函数的基本使用">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-29T09:20:59.000Z">
+<meta property="article:modified_time" content="2022-04-19T09:23:50.000Z">
+<meta property="article:author" content="z7sz">
+<meta property="article:tag" content="python基础">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.z7sz.top/post/f38cf25.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.z7sz.top/post/f38cf25.html","path":"post/f38cf25.html","title":"函数的基本使用"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>函数的基本使用 | 77づづ77</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">77づづ77</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">31</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81python%E7%9A%84%E5%87%BD%E6%95%B0"><span class="nav-text">一、python的函数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E5%87%BD%E6%95%B0%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">1、函数的定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-text">2、变量的作用域</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%87%BD%E6%95%B0%E7%9A%84%E5%8F%82%E6%95%B0"><span class="nav-text">二、函数的参数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E5%8F%82%E6%95%B0%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="nav-text">1、参数默认值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E4%B8%8D%E5%AE%9A%E9%95%BF%E5%8F%82%E6%95%B0"><span class="nav-text">2、不定长参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3%E3%80%81%E5%91%BD%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E5%8F%82%E6%95%B0"><span class="nav-text">3、命名关键字参数</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81python%E4%B8%AD%E7%9A%84%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="nav-text">三、python中的内置函数</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="z7sz"
+      src="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+  <p class="site-author-name" itemprop="name">z7sz</p>
+  <div class="site-description" itemprop="description">技术分享</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://mybot.top/blog/" title="http:&#x2F;&#x2F;mybot.top&#x2F;blog&#x2F;" rel="noopener" target="_blank">Coder-Sakura</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://rj45mp.github.io/" title="https:&#x2F;&#x2F;rj45mp.github.io&#x2F;" rel="noopener" target="_blank">Rj45</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.z7sz.top/post/f38cf25.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+      <meta itemprop="name" content="z7sz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="77づづ77">
+      <meta itemprop="description" content="技术分享">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="函数的基本使用 | 77づづ77">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          函数的基本使用
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-03-29 17:20:59" itemprop="dateCreated datePublished" datetime="2022-03-29T17:20:59+08:00">2022-03-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-04-19 17:23:50" itemprop="dateModified" datetime="2022-04-19T17:23:50+08:00">2022-04-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/post/f38cf25.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/post/f38cf25.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.7k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>5 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+       <hr>
+<blockquote>
+<p>本章概述：python基础——函数的基本使用</p>
+</blockquote>
+<hr>
+<span id="more"></span>
+
+<h4 id="一、python的函数"><a href="#一、python的函数" class="headerlink" title="一、python的函数"></a>一、python的函数</h4><h5 id="1、函数的定义"><a href="#1、函数的定义" class="headerlink" title="1、函数的定义"></a>1、函数的定义</h5><p>在Python中可以使用<code>def</code>关键字来定义函数，而函数执行完成后我们会通过<code>return</code>关键字来返回函数的执行结果。函数的作用在于将大量重复的代码封装起来，方便重复调用。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;不带参数&quot;</span>)</span><br><span class="line">get()   <span class="comment">#不带参数</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的例子就是一个简单的函数，并且该函数是不带参数的。</p>
+<h5 id="2、变量的作用域"><a href="#2、变量的作用域" class="headerlink" title="2、变量的作用域"></a>2、变量的作用域</h5><p>变量起作用的范围称为变量的作用域，不同作用域内同名变量之间互不影响。变量分为全局变量和局部变量。</p>
+<p>全局变量：在函数或类之外定义的变量，作用域从定义的位置开始到整个模块（也可以理解成py文件）结束。全局变量一般作为常量使用，即该变量是不变的。函数内要改变全局变量的值，需要使用 global 声明一下。</p>
+<p>局部变量：在函数体内申明的变量，只在函数内起作用。</p>
+<p>局部变量的查询和访问速度比全局变量快，优先考虑使用，尤其是在循环的时候。在特别强调效率的地方或者循环次数较多的地方，可以通过将全局变量转为局部变量提高运行速度。总而言之，在循环结构中尽量不定义变量（包括不定义方法）。比如在for循环里头需要使用time.sleep()进行暂停，这时可以现在循环外把暂停定义好，a&#x3D;time.time，然后在循环内直接使用a(1)，这样能使运行的速度提升很多</p>
+<p>通过locals()和globals()函数可以打印出所有的局部变量和全局变量。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="number">1</span> <span class="comment">#全局变量</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>():</span><br><span class="line">    b=<span class="number">2</span> <span class="comment">#局部变量</span></span><br><span class="line">    <span class="built_in">print</span>(b)</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">globals</span>()) <span class="comment">#打印全局变量</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">locals</span>())  <span class="comment">#打印局部变量</span></span><br><span class="line"></span><br><span class="line">get()</span><br></pre></td></tr></table></figure>
+
+<p>全局变量和局部变量的效率比较</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">global_test</span>():</span><br><span class="line">    start=time.time()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000000</span>):</span><br><span class="line">        a=random.randint(<span class="number">1</span>,<span class="number">100</span>)</span><br><span class="line">    end=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;耗时&#123;0&#125;&quot;</span>.<span class="built_in">format</span>((end-start)))</span><br><span class="line"></span><br><span class="line">global_test()  <span class="comment">#耗时5.018017768859863</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">local_test</span>():</span><br><span class="line">    start=time.time()</span><br><span class="line">    a=random.randint</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10000000</span>):</span><br><span class="line">        a(<span class="number">1</span>,<span class="number">100</span>)</span><br><span class="line">    end=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;耗时&#123;0&#125;&quot;</span>.<span class="built_in">format</span>((end-start)))</span><br><span class="line"> </span><br><span class="line">local_test()  <span class="comment">#耗时4.793867349624634</span></span><br></pre></td></tr></table></figure>
+
+<p>运行了好几次，结果都是下面的函数比上面的函数更省时间。</p>
+<h4 id="二、函数的参数"><a href="#二、函数的参数" class="headerlink" title="二、函数的参数"></a>二、函数的参数</h4><h5 id="1、参数默认值"><a href="#1、参数默认值" class="headerlink" title="1、参数默认值"></a>1、参数默认值</h5><p>python函数可以没有参数，参数可以有默认值。带默认值的参数必须放在不带默认值的参数之后</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">x,y,z=<span class="number">10</span></span>):</span><br><span class="line">    <span class="keyword">return</span> x + y + z</span><br><span class="line"></span><br><span class="line"><span class="comment">#如果z没有指定数值，则默认为10</span></span><br><span class="line">get(<span class="number">10</span>,<span class="number">12</span>)   <span class="comment">#32</span></span><br><span class="line"><span class="comment">#z指定数值，则被赋值为11</span></span><br><span class="line">get(<span class="number">10</span>,<span class="number">12</span>,<span class="number">11</span>)  <span class="comment">#33</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2、不定长参数"><a href="#2、不定长参数" class="headerlink" title="2、不定长参数"></a>2、不定长参数</h5><p>不定长参数允许我们输入0或者任意个参数，当一个函数的参数不明确个数时，就需要使用不定长参数，不定长参数用*表示。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用星号表达式来表示args可以接收0个或任意多个参数</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">*args</span>):</span><br><span class="line">    <span class="built_in">sum</span>=<span class="number">0</span></span><br><span class="line">    <span class="comment"># 可变参数可以放在for循环中取出每个参数的值</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> args:</span><br><span class="line">        <span class="built_in">sum</span>+=i</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在调用get函数时可以传入0个或任意多个参数</span></span><br><span class="line"><span class="built_in">print</span>(get(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+
+<p>带参数名的不定长参数用**表示。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">**kwargs</span>):</span><br><span class="line">    <span class="built_in">sum</span>=<span class="number">0</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 字典类型</span></span><br><span class="line">    <span class="built_in">print</span>(kwargs)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> kwargs.values():</span><br><span class="line">        <span class="built_in">sum</span>+=i</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">sum</span></span><br><span class="line"><span class="built_in">print</span>(get(a=<span class="number">3</span>,b=<span class="number">4</span>,d=<span class="number">5</span>))</span><br></pre></td></tr></table></figure>
+
+<h5 id="3、命名关键字参数"><a href="#3、命名关键字参数" class="headerlink" title="3、命名关键字参数"></a>3、命名关键字参数</h5><p>所谓命名关键字参数，就是写在<em>号后的参数。它的作用在于在传入参数时必须以<code>参数名=参数值</code>的方式传参，并且不能传入</em>号后面没有明确的参数。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">*,a,b</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;a&#125;</span>,<span class="subst">&#123;b&#125;</span>&quot;</span>)</span><br><span class="line">    </span><br><span class="line">get(a=<span class="number">1</span>,b=<span class="number">2</span>)  <span class="comment">#1,2</span></span><br><span class="line">get(<span class="number">1</span>,<span class="number">2</span>)   <span class="comment">#报错</span></span><br><span class="line">get(a=<span class="number">1</span>,b=<span class="number">2</span>,c=<span class="number">3</span>)  <span class="comment">#报错</span></span><br></pre></td></tr></table></figure>
+
+<p>命名关键字参数可以跟不定长参数混合使用。</p>
+<h4 id="三、python中的内置函数"><a href="#三、python中的内置函数" class="headerlink" title="三、python中的内置函数"></a>三、python中的内置函数</h4><p>python中有一类函数，不需要我们去进行定义也不需要我们import进行引入就可以直接使用，称之为内置函数，这些内置函数都是很有用也是最常用的，下面的表格列出了一部分的内置函数。</p>
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>abs</code></td>
+<td>返回一个数的绝对值，例如：<code>abs(-1.3)</code>会返回<code>1.3</code>。</td>
+</tr>
+<tr>
+<td><code>bin</code></td>
+<td>把一个整数转换成以<code>&#39;0b&#39;</code>开头的二进制字符串，例如：<code>bin(123)</code>会返回<code>&#39;0b1111011&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>chr</code></td>
+<td>将Unicode编码转换成对应的字符，例如：<code>chr(8364)</code>会返回<code>&#39;€&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>hex</code></td>
+<td>将一个整数转换成以<code>&#39;0x&#39;</code>开头的十六进制字符串，例如：<code>hex(123)</code>会返回<code>&#39;0x7b&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>input</code></td>
+<td>从输入中读取一行，返回读到的字符串。</td>
+</tr>
+<tr>
+<td><code>len</code></td>
+<td>获取字符串、列表等的长度。</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>返回多个参数或一个可迭代对象中的最大值，例如：<code>max(12, 95, 37)</code>会返回<code>95</code>。</td>
+</tr>
+<tr>
+<td><code>min</code></td>
+<td>返回多个参数或一个可迭代对象中的最小值，例如：<code>min(12, 95, 37)</code>会返回<code>12</code>。</td>
+</tr>
+<tr>
+<td><code>oct</code></td>
+<td>把一个整数转换成以<code>&#39;0o&#39;</code>开头的八进制字符串，例如：<code>oct(123)</code>会返回<code>&#39;0o173&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>open</code></td>
+<td>打开一个文件并返回文件对象。</td>
+</tr>
+<tr>
+<td><code>ord</code></td>
+<td>将字符转换成对应的Unicode编码，例如：<code>ord(&#39;€&#39;)</code>会返回<code>8364</code>。</td>
+</tr>
+<tr>
+<td><code>pow</code></td>
+<td>求幂运算，例如：<code>pow(2, 3)</code>会返回<code>8</code>；<code>pow(2, 0.5)</code>会返回<code>1.4142135623730951</code>。</td>
+</tr>
+<tr>
+<td><code>print</code></td>
+<td>打印输出。</td>
+</tr>
+<tr>
+<td><code>range</code></td>
+<td>构造一个范围序列，例如：<code>range(100)</code>会产生<code>0</code>到<code>99</code>的整数序列。</td>
+</tr>
+<tr>
+<td><code>round</code></td>
+<td>按照指定的精度对数值进行四舍五入，例如：<code>round(1.23456, 4)</code>会返回<code>1.2346</code>。</td>
+</tr>
+<tr>
+<td><code>sum</code></td>
+<td>对一个序列中的项从左到右进行求和运算，例如：<code>sum(range(1, 101))</code>会返回<code>5050</code>。</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>返回对象的类型，例如：<code>type(10)</code>会返回<code>int</code>；而<code>type(&#39;hello&#39;)</code>会返回<code>str</code>。</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>z7sz
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.z7sz.top/post/f38cf25.html" title="函数的基本使用">https://blog.z7sz.top/post/f38cf25.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/python%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i> python基础</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/3e25d6ff.html" rel="prev" title="数据结构——字典和集合">
+                  <i class="fa fa-chevron-left"></i> 数据结构——字典和集合
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/4bb85501.html" rel="next" title="匿名函数和递归函数">
+                  匿名函数和递归函数 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">z7sz</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">115k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:11</span>
+  </span>
+</div>
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/31/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://blog.z7sz.top/post/f38cf25.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"login":"disable","locale":{"placeholder":"输入你的评论，填写邮箱能收到更快的回复哦！"},"avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/post/f38cf25.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/crash_cheat.js"></script>
+</body>
+</html>

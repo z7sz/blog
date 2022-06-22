@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="mask-icon" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png" color="#222">
+  <meta name="google-site-verification" content="MUHPhzKt0ZT1_C9CHx84pXcbz-NqFP6V06JNY5Sp9e4">
+  <meta name="baidu-site-verification" content="code-7QquLpFUZI">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.z7sz.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":20},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本章概述：hexo+next博客美化——主题文件美化">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+next博客主题文件美化">
+<meta property="og:url" content="https://blog.z7sz.top/post/6ece4714.html">
+<meta property="og:site_name" content="77づづ77">
+<meta property="og:description" content="本章概述：hexo+next博客美化——主题文件美化">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-18T07:21:53.000Z">
+<meta property="article:modified_time" content="2022-06-22T04:39:44.249Z">
+<meta property="article:author" content="z7sz">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="next">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.z7sz.top/post/6ece4714.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.z7sz.top/post/6ece4714.html","path":"post/6ece4714.html","title":"hexo+next博客主题文件美化"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>hexo+next博客主题文件美化 | 77づづ77</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">77づづ77</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">31</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%A4%87%E7%94%A8%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-text">一、备用主题配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E7%AB%99%E7%82%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="nav-text">二、站点配置文件配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E9%85%8D%E7%BD%AE%E7%AB%99%E7%82%B9%E4%BF%A1%E6%81%AF"><span class="nav-text">1、配置站点信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E9%85%8D%E7%BD%AEURL"><span class="nav-text">2、配置URL</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3%E3%80%81tab%E5%AD%97%E7%AC%A6%E9%85%8D%E7%BD%AE"><span class="nav-text">3、tab字符配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4%E3%80%81%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%94%B9"><span class="nav-text">4、主题更改</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="nav-text">三、主题配置文件配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E8%A7%86%E5%9B%BE%E9%80%89%E6%8B%A9"><span class="nav-text">1、视图选择</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E6%9B%B4%E6%94%B9%E7%BD%91%E7%AB%99%E5%9B%BE%E6%A0%87"><span class="nav-text">2、更改网站图标</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3%E3%80%81%E5%A2%9E%E5%8A%A0%E9%A1%B5%E9%9D%A2%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="nav-text">3、增加页面版权信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4%E3%80%81%E9%85%8D%E7%BD%AE%E8%8F%9C%E5%8D%95%E9%A1%B9"><span class="nav-text">4、配置菜单项</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5%E3%80%81%E4%BE%A7%E8%BE%B9%E6%A0%8F%E8%AE%BE%E7%BD%AE"><span class="nav-text">5、侧边栏设置</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#5-1%E3%80%81%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%9B%BE%E5%83%8F%E8%AE%BE%E7%BD%AE"><span class="nav-text">5.1、侧边栏图像设置</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5-2%E3%80%81%E5%8F%8B%E9%93%BE%E6%B7%BB%E5%8A%A0"><span class="nav-text">5.2、友链添加</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#5-3%E3%80%81%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%9B%AE%E5%BD%95%E8%AE%BE%E7%BD%AE"><span class="nav-text">5.3、侧边栏目录设置</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6%E3%80%81%E9%A1%B5%E8%84%9A%E8%AE%BE%E7%BD%AE"><span class="nav-text">6、页脚设置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7%E3%80%81%E5%B8%96%E5%AD%90%E9%85%8D%E7%BD%AE"><span class="nav-text">7、帖子配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E9%A1%B5%E9%9D%A2"><span class="nav-text">8、自定义页面</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#8-1%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E7%AD%BE%E9%A1%B5%E9%9D%A2"><span class="nav-text">8.1、自定义标签页面</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#8-2%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2"><span class="nav-text">8.2、自定义分类页面</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#8-3%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89404%E9%A1%B5%E9%9D%A2"><span class="nav-text">8.3、自定义404页面</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9%E3%80%81%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE"><span class="nav-text">9、其他配置</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#9-1%E3%80%81%E4%BB%A3%E7%A0%81%E5%9D%97%E6%B7%BB%E5%8A%A0%E5%A4%8D%E5%88%B6%E6%8C%89%E9%92%AE%E4%BB%A5%E5%8F%8A%E6%A0%B7%E5%BC%8F"><span class="nav-text">9.1、代码块添加复制按钮以及样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#9-2%E3%80%81%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8%E8%AE%BE%E7%BD%AE"><span class="nav-text">9.2、返回顶部设置</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#9-3%E3%80%81%E9%A1%B6%E9%83%A8%E6%98%BE%E7%A4%BA%E9%98%85%E8%AF%BB%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="nav-text">9.3、顶部显示阅读进度条</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="z7sz"
+      src="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+  <p class="site-author-name" itemprop="name">z7sz</p>
+  <div class="site-description" itemprop="description">技术分享</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://mybot.top/blog/" title="http:&#x2F;&#x2F;mybot.top&#x2F;blog&#x2F;" rel="noopener" target="_blank">Coder-Sakura</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://rj45mp.github.io/" title="https:&#x2F;&#x2F;rj45mp.github.io&#x2F;" rel="noopener" target="_blank">Rj45</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.z7sz.top/post/6ece4714.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+      <meta itemprop="name" content="z7sz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="77づづ77">
+      <meta itemprop="description" content="技术分享">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="hexo+next博客主题文件美化 | 77づづ77">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          hexo+next博客主题文件美化
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-18 15:21:53" itemprop="dateCreated datePublished" datetime="2022-06-18T15:21:53+08:00">2022-06-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-22 12:39:44" itemprop="dateModified" datetime="2022-06-22T12:39:44+08:00">2022-06-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/post/6ece4714.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/post/6ece4714.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>4.3k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>7 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+       <hr>
+<blockquote>
+<p>本章概述：hexo+next博客美化——主题文件美化</p>
+</blockquote>
+<hr>
+<span id="more"></span>
+
+<p>从这一篇博客起正式开始博客美化的说明。</p>
+<h4 id="一、备用主题配置文件"><a href="#一、备用主题配置文件" class="headerlink" title="一、备用主题配置文件"></a>一、备用主题配置文件</h4><p>上一篇博客有提过备用主题配置文件，使用这种方法来改变主题配置不会原有配置文件配置改动，在主题升级时不会造成配置冲突配置被覆盖等情况。</p>
+<p>做法：复制主题配置文件到博客目录上</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp themes/next/_config.yml  _config.next.yml</span><br></pre></td></tr></table></figure>
+
+<p>这样我们就可以使用备用主题文件来改变配置了。</p>
+<h4 id="二、站点配置文件配置"><a href="#二、站点配置文件配置" class="headerlink" title="二、站点配置文件配置"></a>二、站点配置文件配置</h4><h5 id="1、配置站点信息"><a href="#1、配置站点信息" class="headerlink" title="1、配置站点信息"></a>1、配置站点信息</h5><p>站点信息主要配置站点标题、作者以及站点使用的语言类型，其余的可以保持默认，当然也可以根据个人需求来配置其他项。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">title: 站点标题</span><br><span class="line">subtitle: &#x27;&#x27;</span><br><span class="line">description: &#x27;&#x27;</span><br><span class="line">keywords:</span><br><span class="line">author: 作者</span><br><span class="line">language: zh-CN</span><br><span class="line">timezone: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<h5 id="2、配置URL"><a href="#2、配置URL" class="headerlink" title="2、配置URL"></a>2、配置URL</h5><p>博客后面是需要上传到github或其他托管平台上的，这里的url则是访问博客网站的网址，其余的先不用改。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">url: https://blog.z7sz.top</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line">pretty_urls:</span><br><span class="line">  trailing_index: true </span><br><span class="line">  trailing_html: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="3、tab字符配置"><a href="#3、tab字符配置" class="headerlink" title="3、tab字符配置"></a>3、tab字符配置</h5><p>Writing中有一个tab也就是制表符的替换符号配置，我这边建议用4个空格来代替tab。Writing中其他配置可以参考前两篇博客的站点配置文件介绍来自行配置。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tab_replace: &#x27;    &#x27;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4、主题更改"><a href="#4、主题更改" class="headerlink" title="4、主题更改"></a>4、主题更改</h5><p>主题记得更改为next主题</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>deploy在第一篇hexo搭建有讲过，这里就不讲了。站点配置文件的内容比较少，大概就这些，前面的一篇博客我也有详细的介绍过这个文件中的配置，想配置其他项的可以按照我那篇博客来更改配置。需要注意的是，改动站点配置文件时需要重新启动本地服务器，不然配置是不生效的，主题配置文件由于使用的备用主题配置文件的方法，所每次配置完也需要重新启动本地服务器。</p>
+<h4 id="三、主题配置文件配置"><a href="#三、主题配置文件配置" class="headerlink" title="三、主题配置文件配置"></a>三、主题配置文件配置</h4><h5 id="1、视图选择"><a href="#1、视图选择" class="headerlink" title="1、视图选择"></a>1、视图选择</h5><p>我个人比较喜欢Gemini，所以在Schemes配置中将视图选择更改为Gemini，我们需要在备用配置文件中更改配置。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Schemes</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">scheme: Muse</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">scheme: Mist</span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">scheme: Pisces</span></span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<h5 id="2、更改网站图标"><a href="#2、更改网站图标" class="headerlink" title="2、更改网站图标"></a>2、更改网站图标</h5><p>我们可以在favicon配置中更改我们想要的网站图标，网站图标建议放在图传网站上，不建议放在本地，放在本地可能会让访问速度变慢。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">favicon:</span><br><span class="line">  small: /images/favicon-16x16-next.png</span><br><span class="line">  medium: /images/favicon-32x32-next.png</span><br><span class="line">  apple_touch_icon: /images/apple-touch-icon-next.png</span><br><span class="line">  safari_pinned_tab: /images/logo.svg</span><br></pre></td></tr></table></figure>
+
+<h5 id="3、增加页面版权信息"><a href="#3、增加页面版权信息" class="headerlink" title="3、增加页面版权信息"></a>3、增加页面版权信息</h5><p>我们可以在页面增加版权信息，版权信息增加在文章的结尾处。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">creative_commons:</span><br><span class="line">  post: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="4、配置菜单项"><a href="#4、配置菜单项" class="headerlink" title="4、配置菜单项"></a>4、配置菜单项</h5><p>在menu配置下，我们可以把需要的菜单项取消注释，我这里只需要首页、分类、归档以及标签，并且在menu_settings中把icons和badges都设置为true。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || fa fa-home</span><br><span class="line"><span class="meta prompt_">  #</span><span class="language-bash">about: /about/ || fa fa-user</span></span><br><span class="line">  tags: /tags/ || fa fa-tags</span><br><span class="line">  categories: /categories/ || fa fa-th</span><br><span class="line">  archives: /archives/ || fa fa-archive</span><br><span class="line"><span class="meta prompt_">  #</span><span class="language-bash">schedule: /schedule/ || fa fa-calendar</span></span><br><span class="line"><span class="meta prompt_">  #</span><span class="language-bash">sitemap: /sitemap.xml || fa fa-sitemap</span></span><br><span class="line"><span class="meta prompt_">  #</span><span class="language-bash">commonweal: /404/ || fa fa-heartbeat</span></span><br><span class="line"><span class="meta prompt_">  </span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Enable / Disable menu icons / item badges.</span></span><br><span class="line">menu_settings:</span><br><span class="line">  icons: true</span><br><span class="line">  badges: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="5、侧边栏设置"><a href="#5、侧边栏设置" class="headerlink" title="5、侧边栏设置"></a>5、侧边栏设置</h5><p>侧边栏设置主要有侧边栏方向、宽度、填充、偏移量等设置，我基本保持默认，主要增加侧边栏图像以及让图像显示为圆形，这个看个人喜好选择，我在上一篇博客也有详细说过。</p>
+<h6 id="5-1、侧边栏图像设置"><a href="#5-1、侧边栏图像设置" class="headerlink" title="5.1、侧边栏图像设置"></a>5.1、侧边栏图像设置</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">avatar:</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Replace the default image and <span class="built_in">set</span> the url here.</span></span><br><span class="line">  url:  #/images/avatar.gif</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">If <span class="literal">true</span>, the avatar will be displayed <span class="keyword">in</span> circle.</span></span><br><span class="line">  rounded: true</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">If <span class="literal">true</span>, the avatar will be rotated with the cursor.</span></span><br><span class="line">  rotated: false</span><br></pre></td></tr></table></figure>
+
+<h6 id="5-2、友链添加"><a href="#5-2、友链添加" class="headerlink" title="5.2、友链添加"></a>5.2、友链添加</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">links_settings:</span><br><span class="line">  icon: fa fa-link</span><br><span class="line">  title: 友链</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Available values: block | inline</span></span><br><span class="line">  layout: inline</span><br><span class="line"></span><br><span class="line">links:</span><br><span class="line"><span class="meta prompt_">  #</span><span class="language-bash">Title: https://example.com</span></span><br><span class="line">  Coder-Sakura: http://mybot.top/blog/</span><br><span class="line">  Rj45: https://rj45mp.github.io/</span><br></pre></td></tr></table></figure>
+
+<p>我这里把图标改成了link的图标，然后layout更改成inline</p>
+<h6 id="5-3、侧边栏目录设置"><a href="#5-3、侧边栏目录设置" class="headerlink" title="5.3、侧边栏目录设置"></a>5.3、侧边栏目录设置</h6><p>侧边栏目录这里要把number设置为false，这个选项会自动添加目录序号，但是一般我们在写文章时都会添加序号，所以这里要设置为false。expand_all设置为true，会自动显示所有级别的目录，其余的保持默认即可。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Automatically add list number to toc.</span></span><br><span class="line">  number: false</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">If <span class="literal">true</span>, all words will placed on next lines <span class="keyword">if</span> header width longer <span class="keyword">then</span> sidebar width.</span></span><br><span class="line">  wrap: false</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">If <span class="literal">true</span>, all level of TOC <span class="keyword">in</span> a post will be displayed, rather than the activated part of it.</span></span><br><span class="line">  expand_all: true</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Maximum heading depth of generated toc.</span></span><br><span class="line">  max_depth: 6</span><br></pre></td></tr></table></figure>
+
+<h5 id="6、页脚设置"><a href="#6、页脚设置" class="headerlink" title="6、页脚设置"></a>6、页脚设置</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">  since: 2020</span><br><span class="line"></span><br><span class="line">  icon:</span><br><span class="line">    name: fa fa-user   </span><br><span class="line">    animated: true</span><br><span class="line">   </span><br><span class="line">  powered: false</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>页脚这里更改了站点开始时间，因为我博客是20年就创建了，所以就改为2020，更改了图标并且动态显示，然后把页脚的强力驱动给隐藏了，如果大家的域名有备案的话，还可以修改备案信息。</p>
+<h5 id="7、帖子配置"><a href="#7、帖子配置" class="headerlink" title="7、帖子配置"></a>7、帖子配置</h5><p>帖子配置这里暂时先修改一下文章底部tag标签的图标，其余美化配置涉及到第三方插件，后面再讲。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tag_icon: true</span><br></pre></td></tr></table></figure>
+
+<h5 id="8、自定义页面"><a href="#8、自定义页面" class="headerlink" title="8、自定义页面"></a>8、自定义页面</h5><h6 id="8-1、自定义标签页面"><a href="#8-1、自定义标签页面" class="headerlink" title="8.1、自定义标签页面"></a>8.1、自定义标签页面</h6><p>前面菜单项把标签页和分类页取消注释了，但是我们访问这两个页面的时候肯定是不行的，因为还没有创建前端页面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 创建tags目录，注意要在博客目录下执行以下命令</span><br><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p>命令执行成功后，会在source目录下创建tags目录，并且自动新建index.md文件，接下来修改这个文件。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;标签&quot;</span><br><span class="line">date: 2022-06-18 17:35:53</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>修改完之后标签页面就创建好了。</p>
+<h6 id="8-2、自定义分类页面"><a href="#8-2、自定义分类页面" class="headerlink" title="8.2、自定义分类页面"></a>8.2、自定义分类页面</h6><p>跟自定义标签页面过程差不多</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>修改文件内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: &quot;分类&quot;</span><br><span class="line">date: 2022-06-18 17:42:22</span><br><span class="line">type: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
+
+<h6 id="8-3、自定义404页面"><a href="#8-3、自定义404页面" class="headerlink" title="8.3、自定义404页面"></a>8.3、自定义404页面</h6><p>一个网站怎么能没有404页面呢，404页面是很有必要的。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 404</span><br></pre></td></tr></table></figure>
+
+<p>在404目录的index.md中添加以下内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404 Not Found：该页无法显示</span><br><span class="line">date: 2022-06-18 17:45:22</span><br><span class="line">toc: false</span><br><span class="line">comments: false</span><br><span class="line">permalink: /404</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;center&gt;404 Not Found&lt;/center&gt;</span><br><span class="line">&lt;center&gt; 对不起，您所访问的页面不存在或者已删除 &lt;/center&gt;</span><br><span class="line"></span><br><span class="line">&lt;a href=&quot;https://blog.z7sz.top/&quot;&gt;&lt;center&gt; 返回首页&lt;/center&gt; &lt;/a&gt;</span><br><span class="line"></span><br><span class="line">* 我的Github：[https://github.com/z7sz](https://github.com/z7sz)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>当然，404页面可以自定义，这个看个人喜好。需要注意的是，访问不存在的资源是否可以重定向到 404 页面取决于网站托管服务或 Web 服务器的设置，而不是 Hexo。</p>
+<h5 id="9、其他配置"><a href="#9、其他配置" class="headerlink" title="9、其他配置"></a>9、其他配置</h5><h6 id="9-1、代码块添加复制按钮以及样式"><a href="#9-1、代码块添加复制按钮以及样式" class="headerlink" title="9.1、代码块添加复制按钮以及样式"></a>9.1、代码块添加复制按钮以及样式</h6><p>在codeblock配置项中将copy_button的enable设置为true，style样式可以设置为mac，也可以设置成其他</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">codeblock:</span><br><span class="line">  copy_button:</span><br><span class="line">    enable: true</span><br><span class="line">    # Available values: default | flat | mac</span><br><span class="line">    style: mac</span><br></pre></td></tr></table></figure>
+
+<h6 id="9-2、返回顶部设置"><a href="#9-2、返回顶部设置" class="headerlink" title="9.2、返回顶部设置"></a>9.2、返回顶部设置</h6><p>返回顶部我比较喜欢在侧边栏点击返回，并且显示阅读进度，这个看个人喜欢。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">back2top:</span><br><span class="line">  enable: true</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Back to top <span class="keyword">in</span> sidebar.</span></span><br><span class="line">  sidebar: true</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">Scroll percent label <span class="keyword">in</span> b2t button.</span></span><br><span class="line">  scrollpercent: true</span><br></pre></td></tr></table></figure>
+
+<h6 id="9-3、顶部显示阅读进度条"><a href="#9-3、顶部显示阅读进度条" class="headerlink" title="9.3、顶部显示阅读进度条"></a>9.3、顶部显示阅读进度条</h6><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reading_progress:</span><br><span class="line">  enable: true</span><br><span class="line">  height: 4px</span><br></pre></td></tr></table></figure>
+
+<p>这篇博客的网站美化内容就到这里，我们一个大致的网站已经出来了，可以直接用当博客网站使用，当然，这个网站看起来还没有那么美观，我们接下来还需要继续优化，比如调整样式、使用第三方插件增加功能等。</p>
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>z7sz
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.z7sz.top/post/6ece4714.html" title="hexo+next博客主题文件美化">https://blog.z7sz.top/post/6ece4714.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+              <a href="/tags/next/" rel="tag"><i class="fa fa-tag"></i> next</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/1fccee94.html" rel="prev" title="next主题配置文件配置项介绍">
+                  <i class="fa fa-chevron-left"></i> next主题配置文件配置项介绍
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/554e69bd.html" rel="next" title="hexo+next博客美化——自定义样式">
+                  hexo+next博客美化——自定义样式 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">z7sz</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">115k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:11</span>
+  </span>
+</div>
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/31/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://blog.z7sz.top/post/6ece4714.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"login":"disable","locale":{"placeholder":"输入你的评论，填写邮箱能收到更快的回复哦！"},"avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/post/6ece4714.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/crash_cheat.js"></script>
+</body>
+</html>

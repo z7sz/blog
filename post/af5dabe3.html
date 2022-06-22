@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png">
+  <link rel="mask-icon" href="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/DgSvYC39JbOjTlM.png" color="#222">
+  <meta name="google-site-verification" content="MUHPhzKt0ZT1_C9CHx84pXcbz-NqFP6V06JNY5Sp9e4">
+  <meta name="baidu-site-verification" content="code-7QquLpFUZI">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/blue/pace-theme-flash.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous"></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.z7sz.top","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":20},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"livere","storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="本章概述：python基础——面向对象之访问限制">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面向对象——访问限制">
+<meta property="og:url" content="https://blog.z7sz.top/post/af5dabe3.html">
+<meta property="og:site_name" content="77づづ77">
+<meta property="og:description" content="本章概述：python基础——面向对象之访问限制">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-04-13T01:23:02.000Z">
+<meta property="article:modified_time" content="2022-04-14T08:57:28.000Z">
+<meta property="article:author" content="z7sz">
+<meta property="article:tag" content="python基础">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.z7sz.top/post/af5dabe3.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.z7sz.top/post/af5dabe3.html","path":"post/af5dabe3.html","title":"面向对象——访问限制"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>面向对象——访问限制 | 77づづ77</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">77づづ77</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">31</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E7%A7%81%E6%9C%89%E5%B1%9E%E6%80%A7%E5%92%8C%E7%A7%81%E6%9C%89%E6%96%B9%E6%B3%95"><span class="nav-text">一、私有属性和私有方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81property%E8%A3%85%E9%A5%B0%E5%99%A8"><span class="nav-text">二、property装饰器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81-slots-%E9%AD%94%E6%B3%95%E5%8F%98%E9%87%8F"><span class="nav-text">三、__slots__ 魔法变量</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="z7sz"
+      src="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+  <p class="site-author-name" itemprop="name">z7sz</p>
+  <div class="site-description" itemprop="description">技术分享</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://mybot.top/blog/" title="http:&#x2F;&#x2F;mybot.top&#x2F;blog&#x2F;" rel="noopener" target="_blank">Coder-Sakura</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://rj45mp.github.io/" title="https:&#x2F;&#x2F;rj45mp.github.io&#x2F;" rel="noopener" target="_blank">Rj45</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.z7sz.top/post/af5dabe3.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://picgo-1256593051.cos.ap-guangzhou.myqcloud.com/Typora/2yuHgXIiYz9UvjO.jpg">
+      <meta itemprop="name" content="z7sz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="77づづ77">
+      <meta itemprop="description" content="技术分享">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="面向对象——访问限制 | 77づづ77">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          面向对象——访问限制
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-13 09:23:02" itemprop="dateCreated datePublished" datetime="2022-04-13T09:23:02+08:00">2022-04-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-04-14 16:57:28" itemprop="dateModified" datetime="2022-04-14T16:57:28+08:00">2022-04-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">评论数：</span>
+  
+    <a title="waline" href="/post/af5dabe3.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/post/af5dabe3.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>4 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+       <hr>
+<blockquote>
+<p>本章概述：python基础——面向对象之访问限制</p>
+</blockquote>
+<hr>
+<span id="more"></span>
+
+<h4 id="一、私有属性和私有方法"><a href="#一、私有属性和私有方法" class="headerlink" title="一、私有属性和私有方法"></a>一、私有属性和私有方法</h4><p>在很多面向对象编程中，属性可以设置为私有属性，python中也是如此，但是python跟其他编程语言不同在于python并不从语法上严格保证私有属性的私密性，也就是说，虽然在python中设置了私有属性，但是实际上python只是对这个私有属性重新命名，在类的外部通过重命名后的变量名字任可访问到该私有属性。因此在python中针对私有属性的访问问题，程序员们会有一个共识——不要随便访问私有属性，访问对象属性统一通过对象方法去执行。python类中设置私有属性只需要在属性名字前加双下划线即可。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__age=age</span><br><span class="line"></span><br><span class="line">s1=Student(<span class="string">&#x27;z7sz&#x27;</span>,<span class="number">20</span>)</span><br><span class="line"><span class="built_in">print</span>(s1.__name)   <span class="comment">#这一行会报错，__name是私有属性，无法在外部直接访问</span></span><br><span class="line"><span class="built_in">print</span>(s1._Student__name)  <span class="comment">#这一行不会报错并且可以得到属性值，但是最好不要这么做</span></span><br></pre></td></tr></table></figure>
+
+<p>python中的私有方法跟私有属性是一样的。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,age</span>):</span><br><span class="line">        self.__name=name</span><br><span class="line">        self.__age=age</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__get</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> <span class="string">f&#x27;<span class="subst">&#123;self.__name&#125;</span>:<span class="subst">&#123;self.__age&#125;</span>&#x27;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self.__get()</span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(s1.get())</span><br><span class="line"><span class="built_in">print</span>(s1._Student__get())</span><br></pre></td></tr></table></figure>
+
+<p>上面两行print都能执行成功，但是第二种方式最好不要这么做。</p>
+<h4 id="二、property装饰器"><a href="#二、property装饰器" class="headerlink" title="二、property装饰器"></a>二、property装饰器</h4><p>前面说了因为私有属性的缘故，使得我们不能够像访问属性的方式来获取值，也不能像直接给私有属性赋值，因此我们通常都会另外写获取和赋值的函数来代替直接通过<code>对象.属性名</code>的方式来操作属性。但是这样毕竟没有直接通过<code>对象.属性名</code>方便，因此property装饰器负责把一个方法变成属性调用，这样就使得我们从<code>对象.方法名()</code>的方式变成<code>对象.属性名</code>的方式来操作属性。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Student</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name</span>):</span><br><span class="line">        self.__name=name</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_name</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self.__name</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">set_name</span>(<span class="params">self,name</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">isinstance</span>(name,<span class="built_in">str</span>):  <span class="comment">#name必须为字符串</span></span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&#x27;name must be an str!&#x27;</span>)</span><br><span class="line">        self.__name=name</span><br><span class="line"></span><br><span class="line">s=Student(<span class="string">&#x27;z7sz&#x27;</span>)</span><br><span class="line">s.set_name(<span class="string">&#x27;z7sz1&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(s.get_name())</span><br></pre></td></tr></table></figure>
+
+<p>上面这种方式是不通过装饰器，通过方法来访问数据的方式</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Student_p</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name</span>):</span><br><span class="line">        self.__name=name</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @property</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">name</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self.__name</span><br><span class="line">    </span><br><span class="line"><span class="meta">    @name.setter</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">name</span>(<span class="params">self,name</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> <span class="built_in">isinstance</span>(name,<span class="built_in">str</span>):  <span class="comment">#name必须为字符串</span></span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">&#x27;name must be an str!&#x27;</span>)</span><br><span class="line">        self.__name=name</span><br><span class="line"></span><br><span class="line">s1=Student_p(<span class="string">&#x27;blog&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(s1.name)  <span class="comment">#直接通过&#x27;对象.属性&#x27;访问数据</span></span><br><span class="line">s1.name=<span class="string">&#x27;blog1&#x27;</span>  <span class="comment">#直接赋值</span></span><br><span class="line"><span class="built_in">print</span>(s1.name)</span><br></pre></td></tr></table></figure>
+
+<p>@property涉及到两个方面，本身可以将getter方法变成属性，也就是读取的方法，@property本身又创建了另一个装饰器@xxx.setter，负责把一个setter方法变成属性赋值。所以在上面的代码中@property装饰器可以直接读取数据，@name.setter可以赋值。</p>
+<p>而且通过该装饰器还可以实现某属性只读不写的功能，只写@property装饰器不写@name.setter则可以实现name属性的只读不写。</p>
+<p>装饰器会在后面详细讲，在面向对象内容的装饰器大家可以先记得怎么用。</p>
+<h4 id="三、-slots-魔法变量"><a href="#三、-slots-魔法变量" class="headerlink" title="三、__slots__ 魔法变量"></a>三、__slots__ 魔法变量</h4><p>上面的私有属性+装饰器实现了类中私有属性不能随便被读写，但是外部可以随意像类中写入属性。因此<code>__slots__变量</code>，可以用来限制class实例能添加的属性。</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">A</span>:</span><br><span class="line">    __slots__=(<span class="string">&#x27;name&#x27;</span>,<span class="string">&#x27;age&#x27;</span>) <span class="comment">#实例只能添加这两个属性</span></span><br><span class="line"></span><br><span class="line">a=A()</span><br><span class="line">a.name=<span class="string">&#x27;zsz&#x27;</span></span><br><span class="line">a.age=<span class="number">14</span></span><br><span class="line">a.sex=<span class="number">1</span>  <span class="comment">#这里会报错，因为A不允许实例添加除name和age之外的属性</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+    </div>
+
+    
+    
+    
+      
+
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>z7sz
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.z7sz.top/post/af5dabe3.html" title="面向对象——访问限制">https://blog.z7sz.top/post/af5dabe3.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/python%E5%9F%BA%E7%A1%80/" rel="tag"><i class="fa fa-tag"></i> python基础</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/2e85498b.html" rel="prev" title="面向对象编程入门">
+                  <i class="fa fa-chevron-left"></i> 面向对象编程入门
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/27cd422a.html" rel="next" title="类方法和静态方法">
+                  类方法和静态方法 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">z7sz</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">115k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">3:11</span>
+  </span>
+</div>
+
+<div>
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/31/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/next-theme-pjax/0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+  <script src="/js/third-party/pace.js"></script>
+
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"url":"https://blog.z7sz.top/post/af5dabe3.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"waline-3gww1z9w83e58cea-1256593051.ap-guangzhou.app.tcloudbase.com","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"login":"disable","locale":{"placeholder":"输入你的评论，填写邮箱能收到更快的回复哦！"},"avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"libUrl":"//unpkg.com/@waline/client@v2/dist/waline.js","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/post/af5dabe3.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+
+
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/crash_cheat.js"></script>
+</body>
+</html>
